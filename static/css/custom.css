@@ -1,0 +1,24 @@
+/* Custom styles to complement Bootstrap */
+body {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.form-control, .btn {
+    border-radius: 0;
+}
+
+.success-message {
+    display: none;
+    background-color: var(--bs-success);
+    color: var(--bs-light);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}

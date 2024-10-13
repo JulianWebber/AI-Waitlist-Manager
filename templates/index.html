@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 mb-4">Welcome to AI Startup</h1>
+                <p class="lead mb-4">We're revolutionizing the way businesses interact with AI. Join our waitlist to be among the first to experience the future of AI-driven solutions.</p>
+                <h2 class="h4 mb-3">Key Features:</h2>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Advanced Natural Language Processing</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Real-time Data Analysis</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Customizable AI Models</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i> Seamless Integration with Existing Systems</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Join the Waitlist</h2>
+                        <form id="waitlist-form">
+                            <div class="mb-3">
+                                <label for="full-name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="full-name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Join Waitlist</button>
+                        </form>
+                        <div id="success-message" class="success-message mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
